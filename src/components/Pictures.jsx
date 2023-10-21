@@ -2,9 +2,10 @@ import React from 'react';
 import styles from '../styles/Pictures.module.css';
 
 function Pictures() {
+
   return (
     <>
-    <img className={styles.imeg} src="/img/picture.png"></img>
+    <a href="/img/picture.png"><img className={styles.imeg} src="/img/picture.png"></img></a>
     <div className={styles.counters}>
       <a href="/img/picture.png" className={styles.repost}>
         <img src="/img/download.png" alt="Repost Icon" />
