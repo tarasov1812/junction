@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharing an image</title>
+
+<style>
+    img {
+        pointer-events: none;
+           width: 50%;
+    height: auto; // use this to display responsive image
+
+    }
+</style>
+
+
+</head>
+<body oncontextmenu="return false;">
+
+<h1>User {{userid}} has shared an image</h1>
+
+
+<!--    <h2>Watermarked Image</h2>-->
+    <p id="loading_placeholder">Loading image...</p>
+    <img id="picholder"/>
+    <p id="downloadedby" style="font-size: small; color: #bbbbbb">Shared by: {{userid}}. <br>Reposting the picture without explicit permission from the people that are shown on the picture and the person who has the copyright is prohibited under European law.
+    <br>
+    Viewer {{request.remote_addr}}
+    </p>
+
+<script>
+window.ondragstart = function() { return false; }
+
+    document.getElementById("downloadedby").hidden = true;
+
+    val = "{{ image_base64 | safe }}"
+    setTimeout(() => {
+      document.getElementById("loading_placeholder").hidden = true;
+      document.getElementById("downloadedby").hidden = false;
+
+      document.getElementById("picholder").setAttribute("src", "data:image/jpeg;base64,"+val);
+    }, "1000");
+
+</script>
+
+
+
+</body>
+</html>
