@@ -1,7 +1,6 @@
 import modalValidateEmail from './modal_validate_email.js';
 import modalValidateInput from './modal_validate_input.js';
 import formValidation from './form_validation.js';
-import timeConverter from './time_converter.js';
 import modalValidateInputDataBase from './modale_validate_input_dataB.js';
 
 // Validate email of the Registration form
@@ -97,7 +96,7 @@ registrationButton.addEventListener('click', () => {
         if (response.ok) {
           modal.style.visibility = 'hidden';
           modal.style.opacity = 0;
-          window.location.href = '/feed';
+          window.location.href = '/app';
         } else if (response.status === 400) {
           modalValidateInputDataBase('nick-name', 'invalid-nick-name', 'myModal');
         } else if (response.status === 409) {

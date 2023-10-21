@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 
 import Logo from './Logo.jsx';
-import Posts from './Posts.jsx';
+import Pictures from './Pictures.jsx';
 import Profile from './Profile.jsx';
 
 function Feed() {
@@ -12,7 +12,7 @@ function Feed() {
       <Logo />
       <div className="content">
         <div>
-          <Posts />
+          <Pictures />
         </div>
         <div>
           <Profile />

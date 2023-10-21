@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Route, RouterProvider, createBrowserRouter, createRoutesFromElements,
 } from 'react-router-dom';
@@ -14,7 +14,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route index element={<Feed />} />
     <Route path="photos" element={<Feed />} />
     <Route path="profile" element={<Profile />} />
-    <Route path="login" element={<Settings />} />
+    <Route path="login" element={<Profile />} />
     <Route path="settings/" element={<Settings />}>
     </Route>
   </Route>,
