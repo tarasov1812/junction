@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link type="Image/x-icon" href="./img/favicon.ico" rel="icon">
+    <title>Twister</title>
+    <script crossorigin src="./assets/index.js" type="module"></script>
+    <script crossorigin src="./assets/modal_sing_in.js" type="module"></script>
+    <script crossorigin src="./assets/modal_login.js" type="module"></script>
+</head>
+
+<body>
+    <!-- MODALS  -->
+    <!-- modal sing-in -->
+    <div id="modal-sign-in">
+        <form class="sign-in-form" id="myModal">
+            <div class="line"></div>
+            <div class="registration-and-close">
+                <span class="registration">Registration</span>
+                <span class="close-button">&times;</span>
+            </div>
+            <span class="nick-span">Choose your nick name</span>
+            <input class="input input-nick" id="nick-name" type="text" name="nick">
+            <div id="invalid-nick-name">The field should not be empty</div>
+            <span class="email-span">Your email</span>
+            <input class="input input-email" type="email" name="email" id="email">
+            <div id="invalid-email">Email is not valid</div>
+            <input class="input input-password" type="password" id="password" name="passowrd" placeholder="Password">
+            <input class="input input-repeat-passoword" type="password" id="repeat-password" name="repeat-password"
+                placeholder="Repeat password">
+            <div id="invalid-password">The field should not be empty</div>
+            <button class="button form-button" id="registration-button" type="button">Sign up</button>
+        </form>
+    </div>
+    <!-- modal login -->
+    <div id="modal-login">
+        <form class="login-form" id="loginModal">
+            <div class="line"></div>
+            <div class="registration-and-close">
+                <span class="registration">Authorization</span>
+                <span class="close-button">&times;</span>
+            </div>
+            <span class="nick-span">Put your email</span>
+            <input class="input input-nick" type="email" name="nick-email" id="login-authorization">
+            <div id="invalid-nick-name-login">User doesnd exists</div>
+            <span class="password-span">Your password</span>
+            <input class="input input-pwd" type="password" name="password" id="login-password">
+            <div id="invalid-password-login">Password is not correct</div>
+            <button class="button form-button" type="button" id="login-button">Login</button>
+        </form>
+    </div>
+
+    <!-- MAIN -->
+
+    <main>
+        <!-- header section-->
+        <section class="header">
+            <div class="header-login">
+                <div class="white-space"></div>
+                <div class="logo"></div>
+                <div class="slogan">
+                    <h1>Save your fotos directly at the cloud</h1>
+                </div>
+                <div class="buttons">
+                    <button class="login">Login</button>
+                    <button class="sign-up">Sign up</button>
+                </div>
+            </div>
+            <div class="banner-login">
+            </div>
+        </section>
+
+        <!-- statistics section-->
+        <section class="statistics">
+            <div class="statistic">
+                <span id="usersRegistred"><br /></span>
+                <p>Photos<br />upload</p>
+            </div>
+            <div class="statistic">
+                <span id="messagesTotal"><br /></span>
+                <p>Messages<br />written </p>
+            </div>
+            <div class="statistic">
+                <span id="messagesToday"><br /></span>
+                <p>Posted<br />today</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
