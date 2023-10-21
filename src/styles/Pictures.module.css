@@ -20,6 +20,10 @@ img {
     background-color: #E5E5E5;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .imeg {
     width: 300px;
 }
@@ -257,4 +261,8 @@ hr {
     hr {
         border: 0px solid #FFFFFF;
     }
+}
+
+a span:hover {
+    color: #0057FF;
 }

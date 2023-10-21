@@ -6,7 +6,7 @@ function Pictures() {
     <>
     <img className={styles.imeg} src="/img/picture.png"></img>
     <div className={styles.counters}>
-      <a className={styles.repost}>
+      <a href="/img/picture.png" className={styles.repost}>
         <img src="/img/download.png" alt="Repost Icon" />
         <span>Download</span>
       </a>
