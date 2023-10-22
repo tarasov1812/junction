@@ -16,10 +16,12 @@
 }
 
 .settings {
-    display: flex;
-    flex-direction: row-reverse;
     margin: 0 auto;
-    justify-content: center
+    padding: 20px;
+}
+
+p {
+    font-family: 'Lato';
 }
 
 .nav a {
@@ -32,4 +34,15 @@
 
 a.active {
     color: #0057FF;
+}
+
+button {
+    height: 50px;
+    background-color: #0057FF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 9px 18px 15px;
+    font-size: 18px;
+    font-family: 'Lato';
+    border: none;
 }

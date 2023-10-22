@@ -303,7 +303,8 @@
     margin: 0 auto;
     width: 36px;
     height: 38px;
-    background-image: url("img/logo.svg");
+    background-image: url("img/logo-examfy.png");
+    back-size
 }
 
 @media only screen and (min-width: 800px) {
