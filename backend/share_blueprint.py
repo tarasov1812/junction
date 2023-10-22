@@ -67,11 +67,13 @@ def add_watermark():
     print(base64image)
     return render_template("sharing_page.html", image_base64=base64image.decode('utf-8'), userid="BadUser")
 
-@shareBlueprint.get('/shared')
-def render_preview():
+# identifier contains info about the user that shared the image + info about the desired picture id + secret constant salt, and this combo is hashed with something like SHA254 or some other of reasonable length (so url doesnt look too large).
+# security warning: make sure the pic and user ids are NEVER reused!
+@shareBlueprint.get('/share/<sharingidentifier>')
+def render_preview(sharingidentifier):
     # Get the uploaded image
 
-    image = Image.open("static/testimage.jpg")
+    image = Image.open("imagestorage/testimage.jpg")
 
 
     for i in range(5):
