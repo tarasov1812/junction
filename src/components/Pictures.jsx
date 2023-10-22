@@ -2,46 +2,38 @@ import React from 'react';
 import styles from '../styles/Pictures.module.css';
 
 const click = () => {
-  fetch('/sharerequest1', {
-    method: 'GET',
-  })
-  .then(data => data.text())
-  .then(window.location = data);
+  window.location = "/sharerequest1";
 }
 
 const click2 = () => {
-  fetch('/sharerequest1', {
-    method: 'GET',
-  })
-  .then(data => data.text())
-  .then(window.location = data);
+  window.location = "/sharerequest2";
 }
 
 function Pictures() {
   return (
     <>
-    <img className={styles.imeg} src="/img/picture.png"></img>
-    <div className={styles.counters}>
-      <a className={styles.repost}>
-        <img src="/img/share.png" alt="Like Icon" />
-        <a onClick={click}>Share</a>
-      </a>
-      <a className={styles.repost}>
-        <img src="/img/close.png" alt="Share Icon" />
-        <span>Close</span>
-      </a>
-    </div>
-    <img className={styles.imeg} src="/img/picture2.jpeg"></img>
-    <div className={styles.counters}>
-      <a className={styles.repost}>
-        <img src="/img/share.png" alt="Like Icon" />
-        <a onClick={click2}>Share</a>
-      </a>
-      <a className={styles.repost}>
-        <img src="/img/close.png" alt="Share Icon" />
-        <span>Close</span>
-      </a>
-    </div>
+      <img className={styles.imeg} src="/img/picture.png" alt="Picture 1" />
+      <div className={styles.counters}>
+        <a className={styles.repost} onClick={click}>
+          <img src="/img/share.png" alt="Share Icon" />
+          Share
+        </a>
+        <a className={styles.repost}>
+          <img src="/img/close.png" alt="Close Icon" />
+          Close
+        </a>
+      </div>
+      <img className={styles.imeg} src="/img/picture2.jpeg" alt="Picture 2" />
+      <div className={styles.counters}>
+        <a className={styles.repost} onClick={click2}>
+          <img src="/img/share.png" alt="Share Icon" />
+          Share
+        </a>
+        <a className={styles.repost}>
+          <img src="/img/close.png" alt="Close Icon" />
+          Close
+        </a>
+      </div>
     </>
   );
 }
