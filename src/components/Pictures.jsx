@@ -24,7 +24,7 @@ function Pictures() {
         <span>{el.getAttribute('data-param')}</span>
       </a>
     </div>
-    <img className={styles.imeg} src="/img/picture.png"></img>
+    <img className={styles.imeg} src="/img/picture2.jpeg"></img>
     <div className={styles.counters}>
       <a className={styles.repost}>
         <img src="/img/download.png" alt="Repost Icon" />
