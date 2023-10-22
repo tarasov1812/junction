@@ -8,12 +8,20 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link type="Image/x-icon" href="./img/favicon.ico" rel="icon">
     <title>Twister</title>
-    <script crossorigin src="./assets/index.js" type="module"></script>
-    <script crossorigin src="./assets/modal_sing_in.js" type="module"></script>
+<!--    <script crossorigin src="./assets/index.js" type="module"></script>-->
+<!--    <script crossorigin src="./assets/modal_sing_in.js" type="module"></script>-->
     <script crossorigin src="./assets/modal_login.js" type="module"></script>
+
+    <script>
+    function loginclicked() {
+
+    }
+</script>
+
 </head>
 
 <body>
+
     <!-- MODALS  -->
     <!-- modal sing-in -->
     <div id="modal-sign-in">
@@ -38,7 +46,7 @@
     </div>
     <!-- modal login -->
     <div id="modal-login">
-        <form class="login-form" id="loginModal">
+        <form class="login-form" id="loginModal" action="/login" method="post">
             <div class="line"></div>
             <div class="registration-and-close">
                 <span class="registration">Authorization</span>
@@ -50,7 +58,9 @@
             <span class="password-span">Your password</span>
             <input class="input input-pwd" type="password" name="password" id="login-password">
             <div id="invalid-password-login">Password is not correct</div>
-            <button class="button form-button" type="button" id="login-button">Login</button>
+            <button class="button form-button" type="submit" id="login-button">Login</button>
+
+
         </form>
     </div>
 
@@ -68,6 +78,8 @@
                 <div class="buttons">
                     <button class="login">Login</button>
                     <button class="sign-up">Sign up</button>
+
+
                 </div>
             </div>
             <div class="banner-login">
@@ -75,7 +87,7 @@
         </section>
 
         <!-- statistics section-->
-        <section class="statistics">
+        <!--<section class="statistics">
             <div class="statistic">
                 <span id="usersRegistred"><br /></span>
                 <p>Photos<br />upload</p>
@@ -88,7 +100,9 @@
                 <span id="messagesToday"><br /></span>
                 <p>Posted<br />today</p>
             </div>
-        </section>
+        </section>-->
     </main>
+
+
 </body>
 </html>

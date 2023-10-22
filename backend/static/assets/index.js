@@ -52,13 +52,13 @@ function loadStatistic() {
       const { todayMessages } = data.static;
 
       const usersCountElement = document.getElementById('usersRegistred');
-      usersCountElement.innerHTML = `${users}`;
+      //usersCountElement.innerHTML = `${users}`;
 
       const messagesTotalElement = document.getElementById('messagesTotal');
-      messagesTotalElement.innerHTML = `${messages}`;
+      //messagesTotalElement.innerHTML = `${messages}`;
 
       const messagesTodayElement = document.getElementById('messagesToday');
-      messagesTodayElement.innerHTML = `${todayMessages}`;
+      //messagesTodayElement.innerHTML = `${todayMessages}`;
     })
     .catch((error) => console.error(error));
 }

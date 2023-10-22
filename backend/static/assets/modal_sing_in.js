@@ -18,17 +18,17 @@ btn1.onclick = function () {
 };
 
 // When the user clicks the button in the footer, open the modal
-btn2.onclick = function () {
+/*btn2.onclick = function () {
   modalForm.style.visibility = 'visible';
   modal.style.visibility = 'visible';
   modal.style.opacity = 1;
-};
+};*/
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+/*span.onclick = function () {
   modal.style.visibility = 'hidden';
   modal.style.opacity = 0;
-};
+};*/
 
 // Swipe modal window
 
