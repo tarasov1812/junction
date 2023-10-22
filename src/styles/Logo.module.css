@@ -20,5 +20,6 @@
 .logo {
     height: 23px;
     width: 21px;
-    background-image: url("../../img/logo-feed.svg");
+    background-image: url("/img/logo.svg");
+    background-size: cover;
 }

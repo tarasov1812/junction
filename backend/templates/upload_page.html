@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharing an image</title>
+
+<style>
+    img {
+        pointer-events: none;
+    }
+</style>
+</head>
+<body>
+
+<h1>Add Watermark to Image</h1>
+    <form action="/watermark" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required/>
+        <br><br>
+        <button type="submit">Add Watermark</button>
+    </form>
+
+    {% if image %}
+        <h2>Watermarked Image</h2>
+        <img src="data:image/jpeg;base64,{{ image }}" alt="Watermarked Image">
+    {% endif %}
+
+
+</body>
+</html>
